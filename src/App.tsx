@@ -1,3 +1,6 @@
+import Header from "./components/Header"
+import HeroSlider from "./components/HeroSlider"
+import ServicesSection from "./components/ServicesSection"
 
 
 function App() {
@@ -5,7 +8,19 @@ function App() {
 
   return (
     <>
-     <h1 className="uppercase font-extrabold text-red-500">Estoy usando talwind</h1>
+
+     <div>
+      <Header/>
+     </div>
+
+     <div>
+      <HeroSlider/>
+     </div>
+
+      <div>
+        <ServicesSection/>
+      </div>
+      
     </>
   )
 }
