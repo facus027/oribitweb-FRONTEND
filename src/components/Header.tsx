@@ -9,7 +9,7 @@ export default function Header() {
                     <div
                         onClick={() => scroll.scrollToTop({ duration: 500, smooth: "easeInOutQuad" })}
                     >
-                        <img className="h-56 pt-2 items-center justify-center cursor-pointer hidden dark:block" src="/public/logo.png" alt="logoOrbitWeb" />
+                        <img className="h-56 pt-2 items-center justify-center cursor-pointer hidden dark:block" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1759792816/sg5rpzrm1wrm6vupkg8q.png" alt="logoOrbitWeb" />
                     </div>
                 </div>
                 <div className="flex">

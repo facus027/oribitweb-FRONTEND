@@ -6,7 +6,7 @@ export default function AboutSection() {
       id="nosotros"
       className="relative w-full h-screen flex items-center justify-center text-center text-text-light overflow-hidden"
       style={{
-        backgroundImage: `url('/public/faqSection.jpg')`, // reemplazá por tu imagen
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/zdogp2eek53b6nm4a48c.jpg')`, // reemplazá por tu imagen
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

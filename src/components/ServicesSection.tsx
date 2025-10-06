@@ -40,7 +40,7 @@ export default function ServicesSection() {
       id="servicios"
       className="relative w-full h-screen flex items-center justify-center text-center z-10 text-text-light overflow-hidden"
       style={{
-        backgroundImage: `url('/public/serviceSection.jpg')`, // reemplazar por tu imagen
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/pwjcqexiyybxaipzueih.jpg')`, // reemplazar por tu imagen
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

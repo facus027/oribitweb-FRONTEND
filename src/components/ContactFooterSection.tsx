@@ -8,7 +8,7 @@ export default function ContactFooterSection() {
       id="contacto"
       className="relative w-full py-20 bg-background text-text-light overflow-hidden flex flex-col items-center justify-center"
       style={{
-        backgroundImage: `url('/public/contactoYfooter.jpg')`, // tu imagen de fondo
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/v1759792816/lydkxeibuwdnqaxpduhn.jpg')`, // tu imagen de fondo
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -79,7 +79,7 @@ export default function ContactFooterSection() {
                 <div>
                     <div
                     >
-                        <img className="h-40 items-center justify-center" src="/public/logo.png" alt="logoOrbitWeb" />
+                        <img className="h-40 items-center justify-center" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1759792816/sg5rpzrm1wrm6vupkg8q.png" alt="logoOrbitWeb" />
                     </div>
                     <p className="text-sm text-primary mt-2 font-title">
                         Soluciones creativas para emprendedores digitales.
