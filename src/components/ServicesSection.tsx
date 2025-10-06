@@ -38,25 +38,37 @@ export default function ServicesSection() {
   return (
     <section
       id="servicios"
-      className="relative w-full py-20 bg-background text-text-light flex flex-col items-center px-4"
+      className="relative w-full h-screen flex items-center justify-center text-center z-10 text-text-light overflow-hidden"
+      style={{
+        backgroundImage: `url('/public/serviceSection.jpg')`, // reemplazar por tu imagen
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <h2 className="text-4xl md:text-5xl font-orbit text-primary mb-10 text-center">
-        Servicios
+      
+     
+        {/* Overlay oscuro */}
+      <div className="absolute inset-0 bg-black/60" />
+
+     <div className="flex flex-col relative z-10">
+       <h2 className="text-4xl md:text-6xl font-bold font-orbit tracking-wide text-accent-cyan mb-14 text-center">
+        Nuestros Destacados
       </h2>
 
+
       {/* Grid de tarjetas */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
+      <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 gap-44 max-w-6xl">
         {services.map((service) => (
           <motion.div
             key={service.id}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.15 }}
             className="bg-background-secondary border border-primary/30 rounded-2xl p-6 text-center cursor-pointer hover:shadow-lg hover:shadow-primary/20 transition"
             onClick={() => setActive(service.id)}
           >
-            <h3 className="text-2xl font-semibold mb-3 text-accent-violet">
+            <h3 className="text-3xl font-semibold mb-3 text-accent-violet">
               {service.title}
             </h3>
-            <p className="text-text-muted text-sm">
+            <p className="text-text-muted text-lg">
               {service.description.slice(0, 90)}...
             </p>
             <button className="mt-6 px-4 py-2 bg-primary rounded-md text-sm font-medium hover:bg-primary-light transition">
@@ -65,6 +77,8 @@ export default function ServicesSection() {
           </motion.div>
         ))}
       </div>
+     </div>
+
 
       {/* Modal */}
       <AnimatePresence>
