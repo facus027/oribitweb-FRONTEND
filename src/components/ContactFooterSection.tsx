@@ -47,7 +47,7 @@ export default function ContactFooterSection() {
         >
           <a
             href="mailto:contacto@orbitwebstudio.com"
-            className="bg-primary hover:bg-primary-light px-6 py-3 rounded-lg font-medium text-white transition-all"
+            className="bg-primary flex hover:bg-primary-light px-6 py-3 rounded-lg font-medium text-white transition-all"
           >
             ✉️ Enviar correo
           </a>
@@ -55,17 +55,17 @@ export default function ContactFooterSection() {
             href="https://wa.me/549XXXXXXXXX"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-accent-violet hover:bg-accent-cyan px-6 py-3 rounded-lg font-medium text-white transition-all"
+            className="bg-accent-violet flex hover:bg-accent-cyan lg:gap-2 gap-1 px-6 py-3 rounded-lg font-medium text-white transition-all"
           >
-            💬 WhatsApp
+            <FaWhatsapp className="w-5 h-5 hover:text-blue-400" />  WhatsApp
           </a>
           <a
-            href="https://www.instagram.com/orbitwebstudio"
+            href="https://www.instagram.com/orbitspace.studio"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-all"
+            className="border border-primary flex text-primary lg:gap-2 gap-1 hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-all"
           >
-            📷 Instagram
+            <FaInstagram className="w-5 h-5 hover:text-pink-400" />  Instagram
           </a>
         </motion.div>
 
@@ -79,10 +79,10 @@ export default function ContactFooterSection() {
                 <div>
                     <div
                     >
-                        <img className="h-40 items-center justify-center" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1759792816/sg5rpzrm1wrm6vupkg8q.png" alt="logoOrbitWeb" />
+                        <img className="lg:h-40 h-28 w-auto mx-auto items-center justify-center -mt-10 lg:mt-0" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1760051125/kzp1cjy0oplk3nbjitfo.png" alt="logoOrbitWeb" />
                     </div>
                     <p className="text-sm text-primary mt-2 font-title">
-                        Soluciones creativas para emprendedores digitales.
+                        Diseñamos experiencias que orbitan en tu espacio digital.
                     </p>
                 </div>
 
@@ -100,8 +100,8 @@ export default function ContactFooterSection() {
                 {/* Redes */}
                 <div>
                     <h3 className="text-lg font-semibold mb-3 font-title text-primary">Conectá con nosotros</h3>
-                    <div className="flex items-center gap-4 text-white">
-                        <a href="https://www.instagram.com/viralmkt23" target="_blank" aria-label="Instagram">
+                    <div className="flex items-center gap-4 text-white justify-center">
+                        <a href="https://www.instagram.com/orbitspace.studio" target="_blank" aria-label="Instagram">
                             <FaInstagram className="w-5 h-5 hover:text-pink-400" />
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=542616388808" target="_blank" aria-label="whatsapp">
@@ -116,7 +116,7 @@ export default function ContactFooterSection() {
 
             {/* Legal */}
             <div className="mt-10 border-t pt-6 text-sm text-primary-light text-center">
-                ©{new Date().getFullYear()} OrbitWeb Studio Todos los derechos reservados.
+                ©{new Date().getFullYear()} OrbitSpace Studio Todos los derechos reservados.
             </div>
         </footer>
       </div>

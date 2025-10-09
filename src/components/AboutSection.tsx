@@ -32,11 +32,24 @@ export default function AboutSection() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          En <span className="text-primary font-semibold">OrbitWeb Studio</span> 
+       <div className="lg:hidden block">
+           En <span className="text-primary font-semibold">OrbitSpace Studio </span> 
           ayudamos a marcas y negocios a construir su presencia digital con una 
           identidad sólida, moderna y confiable.  
           Somos un estudio profesional que combina diseño minimalista, 
           tecnología actual y una comunicación clara para lograr resultados reales.
+       </div>
+          <div className="hidden lg:block">
+            En <span className="text-primary font-semibold">OrbitSpace Studio </span> 
+           combinamos diseño web, estrategia digital y posicionamiento SEO para ayudar a las marcas a crecer online.
+          Somos una consultora digital boutique que trabaja con negocios que buscan presencia, claridad y resultados reales.
+
+          Nuestro equipo está formado por especialistas en diseño UX/UI, desarrollo web, redacción digital, optimización SEO y análisis de datos.
+          Unimos lo creativo con lo estratégico para crear sitios que se ven bien, funcionan bien y se encuentran fácilmente.
+
+          Creemos en los procesos claros, la comunicación cercana y las soluciones que generan valor a largo plazo.
+          Más que diseñar sitios, construimos experiencias digitales que impulsan marcas.
+          </div>
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">

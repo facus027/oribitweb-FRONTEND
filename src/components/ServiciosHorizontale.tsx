@@ -1,22 +1,22 @@
 
 const services = [
     {
-        area: "Tu marca, lista para despegar,",
-        servicios: "Creamos sitios web modernos, funcionales y adaptados a tu universo"
+        area: "Diseñamos experiencias",
+        servicios: "que orbitan en tu espacio digital."
     },
     {
-        area: "Consultora digital para marcas que buscan despegar,",
-        servicios: "Diseñamos experiencias que orbitan en tu espacio digital",
+        area: "OrbitSpace Studio",
+        servicios: "Diseñamos experiencias que orbitan en tu espacio digital.",
     },
 ];
 
 
-export default function ServiciosHorizontal() {
+export default function ServiciosHorizontale() {
     return (
         <div className="overflow-hidden w-full absolute z-20">
             <div className="whitespace-nowrap animate-slider flex transition-all duration-300 font-title">
                 {services.map((bloque, index) => (
-                     <div
+                    <div
                         key={index}
                     >
                         <span className="text-accent-cyan tracking-wide lg:text-6xl text-3xl font-bold mx-8 shrink-0">

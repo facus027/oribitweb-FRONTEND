@@ -5,17 +5,17 @@ const slides = [
   {
     title: "Diseñamos tu presencia digital",
     subtitle: "Sitios web modernos, rápidos y minimalistas que reflejan tu marca.",
-    cta: "Comenzar proyecto",
+    cta: "Despega con nosotros",
   },
   {
     title: "Tu marca en órbita",
     subtitle: "Destacá con experiencias digitales confiables y de vanguardia.",
-    cta: "Ver servicios",
+    cta: "Conoce nuestros servicios",
   },
   {
     title: "De la idea a la realidad digital",
     subtitle: "Creamos soluciones personalizadas que conectan y generan impacto.",
-    cta: "Ver proyectos",
+    cta: "Armemos tu sitio",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function HeroSlider() {
     <section
       className="relative w-full h-screen flex items-center justify-center text-center text-text-light overflow-hidden"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/vgzk5ro5a2e1ixxtzxav.jpg)`, // reemplazar por tu imagen
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/vgzk5ro5a2e1ixxtzxav.jpg')`, // reemplazar por tu imagen
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -51,14 +51,14 @@ export default function HeroSlider() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-6xl font-orbit mb-4">
+            <h1 className="text-4xl md:text-7xl font-orbit mb-6">
               {slides[index].title}
             </h1>
             <p className="text-lg md:text-xl text-text-muted mb-8">
               {slides[index].subtitle}
             </p>
             <button
-              className="bg-primary px-6 py-3 rounded-lg text-white font-medium hover:bg-primary-light transition-all"
+              className="bg-primary px-6 py-3 rounded-lg text-white hover:text-black hover:font-bold duration-200 font-medium hover:bg-primary-light transition-all"
             >
               {slides[index].cta}
             </button>

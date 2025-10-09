@@ -53,18 +53,18 @@ export default {
     orbit: ["Orbitron", "sans-serif"], // títulos / logo
   }, 
   animation:{
-        slider: "scrollLeft 35s linear infinite",
+        slider: "scrollLeft 30s linear infinite",
         'arrow-move': 'wiggleArrow 1.5s ease-in-out infinite',
         'rocket-launch': 'rocketLaunch 2s ease-in-out forwards',
       },
       keyframes: {
         scrollLeft: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-800%)" },
+          "100%": { transform: "translateX(-500%)" },
         },
          wiggleArrow: {
-          '0%, 100%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(10px)' },
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(10px)' },
         },
         rocketLaunch: {
           '0%': { transform: 'translate(0, 0)' },
