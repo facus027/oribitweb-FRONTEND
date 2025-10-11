@@ -20,7 +20,7 @@ const services = [
     name: "Productos y puntos de venta",
     description:
       "Página de presentación dinámica que muestra productos destacados y ubicaciones donde comprarlos.Diseñada para marcas que aún no requieren e-commerce completo, pero necesitan mostrar su catálogo, mapas interactivos y llamados a la acción claros.Ideal para distribuidores, emprendimientos gastronómicos o marcas locales con presencia física.",
-    image: "/projects/serrano.png",
+    image: "/public/projects/serrano.png",
     link: "https://serrano-andes.vercel.app/",
   },
    {
@@ -28,7 +28,7 @@ const services = [
     name: "Estudio de abogados",
     description:
       "Landing profesional con estética sobria y elegante, orientada a generar contacto y transmitir autoridad jurídica.Incluye mensajes claros, secciones esenciales y una arquitectura visual que refuerza la credibilidad y el prestigio de la marca.Pensada para profesionales o estudios que desean una presencia online impactante y funcional, sin complicaciones técnicas.",
-    image: "/projects/estudioPalma.png",
+    image: "/public/projects/estudioPalma.png",
     link: "https://www.estudiopalma.com.ar/",
   },
 ],
@@ -47,7 +47,7 @@ const services = [
     name: "Estudio de abogados",
     description:
       "Landing profesional con estética sobria y elegante, orientada a generar contacto y transmitir autoridad jurídica.Incluye mensajes claros, secciones esenciales y una arquitectura visual que refuerza la credibilidad y el prestigio de la marca.Pensada para profesionales o estudios que desean una presencia online impactante y funcional, sin complicaciones técnicas.",
-    image: "/projects/estudioPalma.png",
+    image: "/public/projects/estudioPalma.png",
     link: "https://www.estudiopalma.com.ar/",
   },
   {
@@ -55,7 +55,7 @@ const services = [
     name: "Agencia de marketing",
     description:
       "Un sitio institucional moderno que combina estrategia y diseño visual para potenciar la presencia digital de una agencia de marketing.Destaca por su estructura clara, animaciones sutiles y un enfoque centrado en transmitir confianza y profesionalismo.Ideal para empresas que buscan comunicar sus servicios de manera ordenada, con identidad propia y foco en la conversión.",
-    image: "/projects/viral.png",
+    image: "/public/projects/viral.png",
     link: "https://viral-mkt.vercel.app/",
   }
     ],
@@ -74,7 +74,7 @@ const services = [
     name: "E-commerce completo con panel administrativo",
     description:
       "Tienda online robusta y autogestionable que permite administrar productos, imágenes y recetas desde un panel interno.Todo se renderiza automáticamente en el sitio público, ofreciendo una experiencia fluida y actualizada.Un desarrollo 100% personalizado, escalable y optimizado para crecer junto con el negocio.Perfecto para marcas que buscan independencia, control total y un diseño alineado a su identidad.",
-    image: "/projects/cotillonSM.png",
+    image: "/public/projects/cotillonSM.png",
     link: "https://www.cotillonsanmartin.com.ar/",
   },
 ],
@@ -192,7 +192,7 @@ export default function ServicesSection() {
           <h4 className="text-accent-violet text-lg mb-3 font-semibold">
             Proyectos relacionados:
           </h4>
-          <ul className="text-text-light space-y-1 text-sm sm:text-base">
+          <ul className="text-text-light space-y-1 text-sm sm:text-base z-50">
             {services
               .find((s) => s.id === active)
               ?.projects.map((project) => (
