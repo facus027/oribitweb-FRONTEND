@@ -1,44 +1,107 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { PiPlanetBold,PiChartLineUpBold,PiStorefrontBold  } from "react-icons/pi";
+import { FiSettings } from "react-icons/fi";
+import { useContactModal } from "./modal/useContactModal";
+import { ContactModal } from "./modal/ContactModal";
+
 
 
 const services = [
   {
     id: 1,
     title: "Landing Page",
+    icon: <PiPlanetBold className="text-primary text-3xl" />,
     description:
       "Ideal para campañas, lanzamientos o eventos. Una pagina poderosa, clara y con propósito. Tu historia, contada en un solo impacto.",
-    projects: ["Cotillón San Martín", "Estudio Palma"],
+    projects: [
+     {
+    id: 1,
+    name: "Productos y puntos de venta",
+    description:
+      "Página de presentación dinámica que muestra productos destacados y ubicaciones donde comprarlos.Diseñada para marcas que aún no requieren e-commerce completo, pero necesitan mostrar su catálogo, mapas interactivos y llamados a la acción claros.Ideal para distribuidores, emprendimientos gastronómicos o marcas locales con presencia física.",
+    image: "/projects/serrano.png",
+    link: "https://serrano-andes.vercel.app/",
+  },
+   {
+    id: 2,
+    name: "Estudio de abogados",
+    description:
+      "Landing profesional con estética sobria y elegante, orientada a generar contacto y transmitir autoridad jurídica.Incluye mensajes claros, secciones esenciales y una arquitectura visual que refuerza la credibilidad y el prestigio de la marca.Pensada para profesionales o estudios que desean una presencia online impactante y funcional, sin complicaciones técnicas.",
+    image: "/projects/estudioPalma.png",
+    link: "https://www.estudiopalma.com.ar/",
+  },
+],
     cta:"Quiero mi landing",
   },
+
   {
     id: 2,
     title: "Sitio Corporativo",
+     icon: <PiChartLineUpBold className="text-primary text-3xl" />,
     description:
       "Mostrá tu empresa con una presencia sólida,moderna y confiable. Diseñamos sitios que transmiten profesionalismo y credibilidad.",
-    projects: ["La Central del Cotillón", "Serrano Andes"],
+    projects: [
+      {
+    id: 1,
+    name: "Estudio de abogados",
+    description:
+      "Landing profesional con estética sobria y elegante, orientada a generar contacto y transmitir autoridad jurídica.Incluye mensajes claros, secciones esenciales y una arquitectura visual que refuerza la credibilidad y el prestigio de la marca.Pensada para profesionales o estudios que desean una presencia online impactante y funcional, sin complicaciones técnicas.",
+    image: "/projects/estudioPalma.png",
+    link: "https://www.estudiopalma.com.ar/",
+  },
+  {
+    id: 2,
+    name: "Agencia de marketing",
+    description:
+      "Un sitio institucional moderno que combina estrategia y diseño visual para potenciar la presencia digital de una agencia de marketing.Destaca por su estructura clara, animaciones sutiles y un enfoque centrado en transmitir confianza y profesionalismo.Ideal para empresas que buscan comunicar sus servicios de manera ordenada, con identidad propia y foco en la conversión.",
+    image: "/projects/viral.png",
+    link: "https://viral-mkt.vercel.app/",
+  }
+    ],
     cta:"Empecemos tu proyecto",
   },
+
   {
     id: 3,
     title: "E-commerce",
+    icon: <PiStorefrontBold className="text-primary text-3xl" />,
     description:
       "Convertí visitas en venta con una tienda online rápida,segura y adaptable. Tu negocio disponible 24/7 en todo el país.",
-    projects: ["Cotillón SM", "Restobar Frontend"],
+    projects: [
+      {
+    id: 1,
+    name: "E-commerce completo con panel administrativo",
+    description:
+      "Tienda online robusta y autogestionable que permite administrar productos, imágenes y recetas desde un panel interno.Todo se renderiza automáticamente en el sitio público, ofreciendo una experiencia fluida y actualizada.Un desarrollo 100% personalizado, escalable y optimizado para crecer junto con el negocio.Perfecto para marcas que buscan independencia, control total y un diseño alineado a su identidad.",
+    image: "/projects/cotillonSM.png",
+    link: "https://www.cotillonsanmartin.com.ar/",
+  },
+],
     cta:"Ver ejemplos",
   },
   {
     id: 4,
     title: "Mantenimiento web",
+       icon: <FiSettings className="text-primary text-3xl" />,
     description:
       "Nos ocupamos de que tu sitio siga funcionando perfecto. Actualizaciones, soporte y mejoras continuas, para que vos te enfoques en lo importante.",
-    projects: ["OrbitWeb Clientes", "La Central del Cotillón"],
+    projects: [{
+    id: 1,
+    name: "Sitio de eventos – RestoBar",
+    description:
+      "Sitio de eventos con carta interactiva y diseño moderno.OrbitSpace se encarga del mantenimiento semanal, actualizando eventos y banners del sitio original en WordPress.La versión recreada muestra cómo transformamos sitios existentes en experiencias más rápidas, interactivas y fáciles de gestionar.",
+    image: "/projects/restobar.png",
+    link: "https://restobar-frontend.vercel.app/",
+  }],
     cta:"Solicitar mantenimiento",
   },
 ];
 
 export default function ServicesSection() {
   const [active, setActive] = useState<number | null>(null);
+
+  const { isOpen, openModal, closeModal, context } = useContactModal();
 
   return (
     <section
@@ -56,7 +119,7 @@ export default function ServicesSection() {
   <div className="flex flex-col relative z-10 max-w-6xl w-full">
     {/* Encabezado */}
     <div className="mb-10">
-      <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-orbit tracking-wide italic text-primary mb-4 text-center">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-orbit tracking-wide italic text-primary mb-4 text-center">
         Servicios
       </h2>
       <div className="text-primary-light text-base sm:text-lg md:text-xl leading-relaxed">
@@ -83,13 +146,13 @@ export default function ServicesSection() {
           onClick={() => setActive(service.id)}
         >
           <h3 className="text-2xl sm:text-3xl font-semibold mb-3 text-accent-violet">
-            {service.title}
+            <span>{service.icon}</span>{service.title}
           </h3>
           <p className="text-text-muted text-base sm:text-lg">
             {service.description.slice(0, 90)}...
           </p>
           <button className="mt-6 px-5 py-2 bg-primary rounded-md text-sm font-medium hover:bg-primary-light transition">
-            {service.cta}
+            Ver mas
           </button>
         </motion.div>
       ))}
@@ -132,21 +195,49 @@ export default function ServicesSection() {
           <ul className="text-text-light space-y-1 text-sm sm:text-base">
             {services
               .find((s) => s.id === active)
-              ?.projects.map((p, i) => (
-                <li key={i}>• {p}</li>
-              ))}
+              ?.projects.map((project) => (
+                        <motion.a
+                          key={project.id}
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          className="relative rounded-2xl overflow-hidden flex bg-background hover:shadow-xl hover:shadow-primary/20 transition-all group"
+                        >
+                          {/* Imagen del proyecto */}
+                          <img
+                            src={project.image}
+                            alt={project.name}
+                            className="w-full h-56 object-cover opacity-90 group-hover:opacity-100 transition-all duration-300"
+                          />
+              
+                          {/* Overlay de información */}
+                          <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                            <h3 className="text-2xl font-semibold text-primary mb-2">
+                              {project.name}
+                            </h3>
+                            <p className="text-sm text-text-muted mb-4">
+                              {project.description}
+                            </p>
+                            <span className="inline-block px-4 py-2 bg-primary rounded-md text-white font-medium hover:bg-primary-light transition">
+                              Ver proyecto
+                            </span>
+                          </div>
+                        </motion.a>
+                      ))}
           </ul>
 
           <button
-            onClick={() => setActive(null)}
+            onClick={() => openModal(services.find((s) => s.id === active)?.cta)}
             className="mt-8 px-6 py-3 bg-primary rounded-lg text-white font-medium hover:bg-primary-light transition-all"
           >
-            Cerrar
+            {services.find((s) => s.id === active)?.cta}
           </button>
         </motion.div>
       </motion.div>
     )}
   </AnimatePresence>
+  <ContactModal isOpen={isOpen} onClose={closeModal} context={context} />
 </section>
 
   );

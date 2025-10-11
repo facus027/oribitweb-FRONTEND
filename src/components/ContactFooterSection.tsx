@@ -52,7 +52,7 @@ export default function ContactFooterSection() {
             ✉️ Enviar correo
           </a>
           <a
-            href="https://wa.me/549XXXXXXXXX"
+            href="https://wa.me/5492634381630?text=Hola!%20Quiero%20empezar%20mi%20proyecto%20con%20OrbitSpace."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-accent-violet flex hover:bg-accent-cyan lg:gap-2 gap-1 px-6 py-3 rounded-lg font-medium text-white transition-all"
@@ -104,12 +104,12 @@ export default function ContactFooterSection() {
                         <a href="https://www.instagram.com/orbitspace.studio" target="_blank" aria-label="Instagram">
                             <FaInstagram className="w-5 h-5 hover:text-pink-400" />
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=542616388808" target="_blank" aria-label="whatsapp">
+                        <a href="https://wa.me/5492634381630?text=Hola!%20Quiero%20empezar%20mi%20proyecto%20con%20OrbitSpace."
+                          target="_blank"
+                         rel="noopener noreferrer" aria-label="whatsapp">
                             <FaWhatsapp className="w-5 h-5 hover:text-blue-400" />
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=542634903811" aria-label="whatsapp">
-                            <FaWhatsapp className="w-5 h-5 hover:text-rose-400" />
-                        </a>
+                      
                     </div>
                 </div>
             </div>

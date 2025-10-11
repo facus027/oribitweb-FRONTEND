@@ -3,7 +3,7 @@ import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
     return (
-        <header className=' shadow-md flex opacity-90 fixed h-16 rounded-full w-full mx-auto justify-center z-40 py-0 md:py-2'>
+        <header className=' shadow-md flex opacity-90 fixed h-16 rounded-full w-full mx-auto -mt-3 lg:mt-0 justify-center z-40 py-0 md:py-2'>
             <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
                 <div className="flex lg:gap-5 gap-1">
                     <div

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useContactModal } from "./modal/useContactModal";
+import { ContactModal } from "./modal/ContactModal";
 
 const slides = [
   {
@@ -28,6 +30,8 @@ export default function HeroSlider() {
     }, 5000); // Cambia cada 5 segundos
     return () => clearInterval(interval);
   }, []);
+
+  const { isOpen, openModal, closeModal, context } = useContactModal();
 
   return (
     <section
@@ -58,6 +62,7 @@ export default function HeroSlider() {
               {slides[index].subtitle}
             </p>
             <button
+             onClick={() => openModal("")}
               className="bg-primary px-6 py-3 rounded-lg text-white hover:text-black hover:font-bold duration-200 font-medium hover:bg-primary-light transition-all"
             >
               {slides[index].cta}
@@ -77,6 +82,7 @@ export default function HeroSlider() {
           />
         ))}
       </div>
+      <ContactModal isOpen={isOpen} onClose={closeModal} context={context} />
     </section>
   );
 }
