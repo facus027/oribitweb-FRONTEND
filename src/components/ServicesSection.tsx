@@ -20,7 +20,7 @@ const services = [
     name: "Productos y puntos de venta",
     description:
       "Página de presentación dinámica que muestra productos destacados y ubicaciones donde comprarlos.Diseñada para marcas que aún no requieren e-commerce completo, pero necesitan mostrar su catálogo, mapas interactivos y llamados a la acción claros.Ideal para distribuidores, emprendimientos gastronómicos o marcas locales con presencia física.",
-    image: "/public/projects/serrano.png",
+    image: "https://res.cloudinary.com/dwxwejuvu/image/upload/v1760223993/ukpuv5sai39xb5wszwe0.png",
     link: "https://serrano-andes.vercel.app/",
   },
    {
@@ -28,7 +28,7 @@ const services = [
     name: "Estudio de abogados",
     description:
       "Landing profesional con estética sobria y elegante, orientada a generar contacto y transmitir autoridad jurídica.Incluye mensajes claros, secciones esenciales y una arquitectura visual que refuerza la credibilidad y el prestigio de la marca.Pensada para profesionales o estudios que desean una presencia online impactante y funcional, sin complicaciones técnicas.",
-    image: "/public/projects/estudioPalma.png",
+    image: "https://res.cloudinary.com/dwxwejuvu/image/upload/v1760223990/nvql2whndvumhv2vsqiz.png",
     link: "https://www.estudiopalma.com.ar/",
   },
 ],
@@ -47,7 +47,7 @@ const services = [
     name: "Estudio de abogados",
     description:
       "Landing profesional con estética sobria y elegante, orientada a generar contacto y transmitir autoridad jurídica.Incluye mensajes claros, secciones esenciales y una arquitectura visual que refuerza la credibilidad y el prestigio de la marca.Pensada para profesionales o estudios que desean una presencia online impactante y funcional, sin complicaciones técnicas.",
-    image: "/public/projects/estudioPalma.png",
+    image: "https://res.cloudinary.com/dwxwejuvu/image/upload/v1760223990/nvql2whndvumhv2vsqiz.png",
     link: "https://www.estudiopalma.com.ar/",
   },
   {
@@ -55,7 +55,7 @@ const services = [
     name: "Agencia de marketing",
     description:
       "Un sitio institucional moderno que combina estrategia y diseño visual para potenciar la presencia digital de una agencia de marketing.Destaca por su estructura clara, animaciones sutiles y un enfoque centrado en transmitir confianza y profesionalismo.Ideal para empresas que buscan comunicar sus servicios de manera ordenada, con identidad propia y foco en la conversión.",
-    image: "/public/projects/viral.png",
+    image: "https://res.cloudinary.com/dwxwejuvu/image/upload/v1760223990/yyjgkzprqrbzspcg1dbl.png",
     link: "https://viral-mkt.vercel.app/",
   }
     ],
@@ -74,7 +74,7 @@ const services = [
     name: "E-commerce completo con panel administrativo",
     description:
       "Tienda online robusta y autogestionable que permite administrar productos, imágenes y recetas desde un panel interno.Todo se renderiza automáticamente en el sitio público, ofreciendo una experiencia fluida y actualizada.Un desarrollo 100% personalizado, escalable y optimizado para crecer junto con el negocio.Perfecto para marcas que buscan independencia, control total y un diseño alineado a su identidad.",
-    image: "/public/projects/cotillonSM.png",
+    image: "https://res.cloudinary.com/dwxwejuvu/image/upload/v1760223994/kc1ez8psdf6ou3oydwmc.png",
     link: "https://www.cotillonsanmartin.com.ar/",
   },
 ],
@@ -91,7 +91,7 @@ const services = [
     name: "Sitio de eventos – RestoBar",
     description:
       "Sitio de eventos con carta interactiva y diseño moderno.OrbitSpace se encarga del mantenimiento semanal, actualizando eventos y banners del sitio original en WordPress.La versión recreada muestra cómo transformamos sitios existentes en experiencias más rápidas, interactivas y fáciles de gestionar.",
-    image: "/projects/restobar.png",
+    image: "https://res.cloudinary.com/dwxwejuvu/image/upload/v1760223988/qcu4un67ujqggo8rcs0g.png",
     link: "https://restobar-frontend.vercel.app/",
   }],
     cta:"Solicitar mantenimiento",
@@ -163,12 +163,14 @@ export default function ServicesSection() {
   <AnimatePresence>
     {active && (
       <motion.div
-        className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
+      onClick={(e) => e.stopPropagation()} // ← evita que clic dentro lo cierre
+        className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-[9999]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
         <motion.div
+         onClick={(e) => e.stopPropagation()} // ← evita que clic dentro lo cierre
           className="bg-background-secondary max-w-md w-full rounded-2xl p-8 relative text-center shadow-2xl"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
