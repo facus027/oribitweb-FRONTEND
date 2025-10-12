@@ -11,7 +11,7 @@ interface ContactModalProps {
 export function ContactModal({ isOpen, onClose, context }: ContactModalProps) {
   const whatsappNumber = "5492634381630"; // Número OrbitSpace
   const discoveryFormUrl =
-    "https://forms.gle/XXXXXX"; // URL del formulario de Descubrimiento
+    "https://docs.google.com/forms/d/e/1FAIpQLSeqATxjCxEaawmJidCiZraVCX11dRdgM7_S-ZF0JoOgOf7C0Q/viewform?usp=dialog"; // URL del formulario de Descubrimiento
 
   const message = encodeURIComponent(
     `Hola! Quiero ${context || "empezar un proyecto"} con OrbitSpace Studio 🚀`

@@ -47,7 +47,7 @@ export default function ContactFooterSection() {
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <a
-            href="mailto:contacto@orbitwebstudio.com"
+            href="mailto:contacto@orbitspace.com.ar"
             className="bg-primary flex hover:bg-primary-light px-6 py-3 rounded-lg font-medium text-white transition-all"
           >
             ✉️ Enviar correo
