@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { Link as LinkScroll } from "react-scroll";
 
 export default function ContactFooterSection() {
   return (
@@ -78,8 +79,11 @@ export default function ContactFooterSection() {
                 {/* Identidad */}
                 <div>
                     <div
+                     onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+            }
                     >
-                        <img className="lg:h-40 h-28 w-auto mx-auto items-center justify-center -mt-10 lg:mt-0" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1760051125/kzp1cjy0oplk3nbjitfo.png" alt="logoOrbitWeb" />
+                        <img className="lg:h-40 h-28 w-auto cursor-pointer mx-auto items-center justify-center -mt-10 lg:mt-0" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1760051125/kzp1cjy0oplk3nbjitfo.png" alt="logoOrbitWeb" />
                     </div>
                     <p className="text-sm text-primary mt-2 font-title">
                         Diseñamos experiencias que orbitan en tu espacio digital.
@@ -90,10 +94,27 @@ export default function ContactFooterSection() {
                 <div>
                     <h3 className="text-lg font-semibold mb-3 font-title text-primary">Enlaces</h3>
                     <ul className="space-y-2 text-sm font-body text-accent-violet">
-                        <li><p className="hover:cursor-pointer">Inicio</p></li>
-                        <li><p >Servicios</p></li>
-                        <li><p >Preguntas Frecuentes</p></li>
-                        <li><p >Contacto</p></li>
+                        {[
+              { to: "servicios", label: "Servicios" },
+              { to: "faq", label: "Faq" },
+              { to: "nosotros", label: "Nosotros" },
+              { to: "contacto", label: "Contactanos" },
+            ].map((item) => (
+              <li
+                key={item.to}
+                className="cursor-pointer"
+              >
+                <LinkScroll
+                  to={item.to}
+                  smooth={true}
+                  duration={600}
+                  offset={-80}
+                 
+                >
+                  {item.label}
+                </LinkScroll>
+              </li>
+            ))}
                     </ul>
                 </div>
 

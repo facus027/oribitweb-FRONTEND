@@ -59,7 +59,7 @@ const services = [
     link: "https://viral-mkt.vercel.app/",
   }
     ],
-    cta:"Empecemos tu proyecto",
+    cta:"Empezar mi proyecto",
   },
 
   {
@@ -78,7 +78,7 @@ const services = [
     link: "https://www.cotillonsanmartin.com.ar/",
   },
 ],
-    cta:"Ver ejemplos",
+    cta:"Mi tienda online",
   },
   {
     id: 4,
