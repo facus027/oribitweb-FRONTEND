@@ -17,7 +17,7 @@ export default function Header() {
           >
             <img
               className="md:h-28 h-24 pt-2 cursor-pointer hidden dark:block"
-              src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1760051125/kzp1cjy0oplk3nbjitfo.png"
+              src="https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/kzp1cjy0oplk3nbjitfo.png"
               alt="logoOrbitWeb"
             />
           </div>

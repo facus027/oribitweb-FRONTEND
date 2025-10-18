@@ -9,7 +9,7 @@ export default function ContactFooterSection() {
       id="contacto"
       className="relative w-full py-20 bg-background text-text-light overflow-hidden flex flex-col items-center justify-center"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/v1759792816/lydkxeibuwdnqaxpduhn.jpg')`, // tu imagen de fondo
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/lydkxeibuwdnqaxpduhn.jpg')`, // tu imagen de fondo
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -83,7 +83,7 @@ export default function ContactFooterSection() {
                     window.scrollTo({ top: 0, behavior: "smooth" })
             }
                     >
-                        <img className="lg:h-40 h-28 w-auto cursor-pointer mx-auto items-center justify-center -mt-10 lg:mt-0" src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1760051125/kzp1cjy0oplk3nbjitfo.png" alt="logoOrbitWeb" />
+                        <img loading="lazy" className="lg:h-40 h-28 w-auto cursor-pointer mx-auto items-center justify-center -mt-10 lg:mt-0" src="https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/kzp1cjy0oplk3nbjitfo.png" alt="logoOrbitWeb" />
                     </div>
                     <p className="text-sm text-primary mt-2 font-title">
                         Diseñamos experiencias que orbitan en tu espacio digital.
