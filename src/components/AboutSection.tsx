@@ -9,6 +9,7 @@ export default function AboutSection() {
         backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/zdogp2eek53b6nm4a48c.jpg')`, // reemplazá por tu imagen
         backgroundSize: "cover",
         backgroundPosition: "center",
+        willChange:"transform",
       }}
     >
       {/* Overlay oscuro */}

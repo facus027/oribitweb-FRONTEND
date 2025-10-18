@@ -40,6 +40,7 @@ export default function HeroSlider() {
         backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/vgzk5ro5a2e1ixxtzxav.jpg')`, // reemplazar por tu imagen
         backgroundSize: "cover",
         backgroundPosition: "center",
+        willChange:"transform",
       }}
     >
       {/* Overlay oscuro */}

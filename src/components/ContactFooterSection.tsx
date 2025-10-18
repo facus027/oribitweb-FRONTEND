@@ -12,6 +12,7 @@ export default function ContactFooterSection() {
         backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/lydkxeibuwdnqaxpduhn.jpg')`, // tu imagen de fondo
         backgroundSize: "cover",
         backgroundPosition: "center",
+        willChange:"transform",
       }}
     >
       {/* Overlay oscuro */}

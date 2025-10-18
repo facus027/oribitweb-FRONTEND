@@ -111,6 +111,7 @@ export default function ServicesSection() {
     backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/pwjcqexiyybxaipzueih.jpg')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
+    willChange:"transform",
   }}
 >
   {/* Overlay oscuro */}

@@ -52,7 +52,8 @@ export default function Header() {
                 key={item.to}
                 className="md:mx-5 xs:mx-3 mx-2 mb-1 md:mb-0 whitespace-nowrap"
               >
-                <LinkScroll
+              <a href={`#${item.to}`}>
+                  <LinkScroll
                   to={item.to}
                   smooth={true}
                   duration={600}
@@ -62,6 +63,7 @@ export default function Header() {
                 >
                   {item.label}
                 </LinkScroll>
+              </a>
               </li>
             ))}
           </ul>
