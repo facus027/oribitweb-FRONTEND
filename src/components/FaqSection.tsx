@@ -47,7 +47,7 @@ export default function FaqSection() {
       id="faq"
       className="relative w-full h-screen flex items-center justify-center text-center z-10 text-text-light overflow-hidden"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/ycvtgboew4v7za7lexsh.jpg')`, // reemplazar por tu imagen
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_fill/ycvtgboew4v7za7lexsh.jpg')`, // reemplazar por tu imagen
         backgroundSize: "cover",
         backgroundPosition: "center",
         willChange:"transform",
