@@ -217,10 +217,10 @@ export default function ServicesSection() {
               
                           {/* Overlay de información */}
                           <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
-                            <h3 className="text-2xl font-semibold text-primary mb-2">
+                            <h3 className=" text-lg md:text-2xl font-semibold text-primary mb-2">
                               {project.name}
                             </h3>
-                            <p className="text-sm text-text-muted mb-4">
+                            <p className=" *text-sm text-text-muted mb-4">
                               {project.description}
                             </p>
                             <span className="inline-block px-4 py-2 bg-primary rounded-md text-white font-medium hover:bg-primary-light transition">

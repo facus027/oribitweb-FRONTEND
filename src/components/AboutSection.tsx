@@ -24,7 +24,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Sobre OrbitWeb Studio
+          Sobre OrbitSpace Studio
         </motion.h2>
 
         <motion.p
