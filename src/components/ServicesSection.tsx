@@ -108,7 +108,7 @@ export default function ServicesSection() {
   id="servicios"
   className="relative w-full min-h-screen flex flex-col items-center justify-center text-center z-10 text-text-light overflow-hidden px-4 py-16"
   style={{
-    backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_fill/pwjcqexiyybxaipzueih.jpg')`,
+    backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/pwjcqexiyybxaipzueih.jpg')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     willChange:"transform",

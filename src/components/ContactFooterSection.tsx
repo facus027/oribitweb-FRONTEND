@@ -9,7 +9,7 @@ export default function ContactFooterSection() {
       id="contacto"
       className="relative w-full py-20 bg-background text-text-light overflow-hidden flex flex-col items-center justify-center"
       style={{
-        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_fill/lydkxeibuwdnqaxpduhn.jpg')`, // tu imagen de fondo
+        backgroundImage: `url('https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto,w_1920/lydkxeibuwdnqaxpduhn.jpg')`, // tu imagen de fondo
         backgroundSize: "cover",
         backgroundPosition: "center",
         willChange:"transform",
