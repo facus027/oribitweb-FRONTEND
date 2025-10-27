@@ -16,19 +16,11 @@ export default function AboutSection() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Contenido principal */}
-      <div className="relative z-10 max-w-4xl px-6">
-        <motion.h2
-          className="text-4xl md:text-6xl font-orbit text-primary mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          Sobre OrbitSpace Studio
-        </motion.h2>
+      <div className="relative z-10 max-w-4xl md:px-6 px-3">
+     
 
         <motion.p
-          className="text-lg md:text-xl text-text-muted mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-text-muted md:mb-10 mb-5 leading-relaxed"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -53,10 +45,10 @@ export default function AboutSection() {
           </div>
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-1 text-left">
           {/* Misión */}
           <motion.div
-            className="bg-background-secondary/80 backdrop-blur-sm rounded-xl p-6 border border-primary/20"
+            className="bg-background-secondary/80 backdrop-blur-sm rounded-xl md:p-6 p-4 border border-primary/20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -74,7 +66,7 @@ export default function AboutSection() {
 
           {/* Visión */}
           <motion.div
-            className="bg-background-secondary/80 backdrop-blur-sm rounded-xl p-6 border border-primary/20"
+            className="bg-background-secondary/80 backdrop-blur-sm rounded-xl md:p-6 p-4 border border-primary/20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -92,7 +84,7 @@ export default function AboutSection() {
 
           {/* Valores */}
           <motion.div
-            className="bg-background-secondary/80 backdrop-blur-sm rounded-xl p-6 border border-primary/20"
+            className="bg-background-secondary/80 backdrop-blur-sm rounded-xl md:p-6 p-4 border border-primary/20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

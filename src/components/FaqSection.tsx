@@ -57,12 +57,10 @@ export default function FaqSection() {
         {/* Overlay oscuro */}
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="flex flex-col relative z-10 gap-8">
-        <h2 className="text-4xl md:text-6xl font-orbit text-primary lg:mb-7 mb-3 text-center ">
-        Preguntas frecuentes
-      </h2>
+      <div className="flex flex-col relative z-10 gap-8 ">
+       
 
-      <div className="lg:max-w-3xl w-10/12 lg:w-full space-y-6 mx-auto ">
+      <div className="lg:max-w-3xl w-10/12 lg:w-full space-y-6 mx-auto md:mt-5 mb-0">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
