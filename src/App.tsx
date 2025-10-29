@@ -25,13 +25,13 @@ function App() {
       <div>
         <ServicesSection/>
       </div>
-           <div className="relative lg:top-5 -top-5">
+           <div className="relative md:top- -top-5">
        <ServiciosHorizontales/>
       </div>
       <div>
         <FaqSection/>
       </div>
-      <div className="relative lg:top-12 -top-10">
+      <div className="relative md:top-8 -top-4">
        <ServiciosHorizontal/>
       </div>
       <div>

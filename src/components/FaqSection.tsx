@@ -59,6 +59,7 @@ export default function FaqSection() {
 
       <div className="flex flex-col relative z-10 gap-8 ">
        
+    
 
       <div className="lg:max-w-3xl w-10/12 lg:w-full space-y-6 mx-auto md:mt-5 mb-0">
         {faqs.map((faq, index) => (
